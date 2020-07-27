@@ -54,7 +54,7 @@ func Add(id, role, alias string) error {
 
 func generateURL(ac account) string {
 	if ac.Role == "" {
-		return fmt.Sprintf("https://%s.signin.aws.amazon.com/", ac.ID)
+		return fmt.Sprintf("https://%s.signin.aws.amazon.com/console", ac.ID)
 	}
 	return fmt.Sprintf("https://%s.signin.aws.amazon.com/switchrole?roleName=%s", ac.ID, ac.Role)
 }
