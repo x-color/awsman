@@ -48,7 +48,5 @@ awsman signin pj-prod
 ## How to Install
 
 ```sh
-git clone https://github.com/x-color/awsman
-cd awsman
-go install
+git get github.com/x-color/awsman
 ```
